@@ -1,4 +1,4 @@
 @echo off
 cd /d %~dp0
-python 选关器.py
+D:/B++/py313/python.exe 选关器.py
 pause

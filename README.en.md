@@ -17,7 +17,8 @@ Double-click Rats.exe        # just play
 Double-click 选关器.bat       # open the level selector (levels 1–40)
 ```
 
-> If you don't have Python, run `python 选关器.py` instead (requires Python 3).
+> ⚠️ `选关器.bat` hard-codes a local Python path (`D:/B++/py313/python.exe`).
+> **Change it to your own Python path first** (or use `python 选关器.py` instead, which requires Python 3).
 > The selector first kills any running Rats.exe, then launches the game and waits for
 > the main window. Enter a level (1–40) and click the jump button.
 
@@ -65,7 +66,7 @@ Key addresses:
 ```
 ├── Rats.exe              # main executable (★trial-limit threshold patched 9→99)
 ├── 选关器.py             # ★free level selector 1–40 (tkinter GUI)
-├── 选关器.bat            # double-click launcher for the selector
+├── 选关器.bat            # double-click launcher (hard-codes a local Python path — change it)
 ├── Level.lvl             # level data
 ├── rats.dat              # configuration data
 ├── RATS.HLP              # help file
